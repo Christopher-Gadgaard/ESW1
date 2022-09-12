@@ -1,0 +1,7 @@
+﻿  addition.c
+  main.c
+C:\Users\Bruger\source\repos\ESW1\Session_2\Exercise_2_1\main.c(11,37): warning C4013: 'esw_add' undefined; assuming extern returning int
+  multiplication.c
+  subtraction.c
+  Generating Code...
+  Exercise_2_1.vcxproj -> C:\Users\Bruger\source\repos\ESW1\Session_2\x64\Debug\Exercise_2_1.exe
