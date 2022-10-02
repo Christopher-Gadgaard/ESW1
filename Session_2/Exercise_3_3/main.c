@@ -15,9 +15,9 @@ void multiswap(int* x, int* y, int* z)
 {
 	int temp;
 	temp = *x;
-	*x = *y;
-	*y = *z;
-	*z = temp;
+	*x = *z;
+	*z = *y;
+	*y = temp;
 }
 
 main()
@@ -28,9 +28,9 @@ main()
 	int b = 2;
 	int c = 3;
 
-	printf("%d %d %d \n", a, b, c);
+	printf("a=%d b=%d c=%d \n", a, b, c);
 
 	multiswap(&a, &b, &c);
 
-	printf("%d %d %d \n", a, b, c);
+	printf("a=%d b=%d c=%d \n", a, b, c);
 }

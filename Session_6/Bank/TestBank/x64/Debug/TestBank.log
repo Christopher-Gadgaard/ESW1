@@ -1,0 +1,5 @@
+﻿  account.c
+C:\Users\Bruger\source\repos\ESW1\Session_6\Bank\Bank\account.c(6): warning C4716: 'account_create': must return a value
+  test.cpp
+C:\Users\Bruger\source\repos\ESW1\Session_6\Bank\TestBank\test.cpp(17,41): error C2660: 'account_deposit': function does not take 1 arguments
+C:\Users\Bruger\source\repos\ESW1\Session_6\Bank\Bank\account.h(11,18): message : see declaration of 'account_deposit'

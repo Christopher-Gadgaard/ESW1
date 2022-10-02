@@ -15,6 +15,7 @@ int main()
 	NOTE You are NOT allowed to use the standard toupper(...)
 	function in string.h
 	*/
+
 	int test = 0;
 	while (test != 1);
 	{

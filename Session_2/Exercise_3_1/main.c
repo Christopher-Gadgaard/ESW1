@@ -11,5 +11,4 @@ int main(void)
 
 	printf("%d\n", n1 / n2);
 	printf("%d\n", n1 % n2);
-
 }
