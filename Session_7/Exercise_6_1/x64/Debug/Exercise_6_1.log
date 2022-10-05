@@ -1,0 +1,12 @@
+﻿  linkedList.c
+C:\Users\Bruger\source\repos\ESW1\Session_7\Exercise_6_1\listNode.c(4,1): error C2143: syntax error: missing ';' before '}'
+C:\Users\Bruger\source\repos\ESW1\Session_7\Exercise_6_1\linkedList.c(6,25): error C2011: 'listNode': 'struct' type redefinition
+C:\Users\Bruger\source\repos\ESW1\Session_7\Exercise_6_1\listNode.c(1): message : see declaration of 'listNode'
+C:\Users\Bruger\source\repos\ESW1\Session_7\Exercise_6_1\linkedList.c(32,14): error C2088: '!=': illegal for struct
+C:\Users\Bruger\source\repos\ESW1\Session_7\Exercise_6_1\linkedList.c(35,16): error C2232: '->next': left operand has 'struct' type, use '.'
+C:\Users\Bruger\source\repos\ESW1\Session_7\Exercise_6_1\linkedList.c(36,14): error C2232: '->item': left operand has 'struct' type, use '.'
+C:\Users\Bruger\source\repos\ESW1\Session_7\Exercise_6_1\linkedList.c(36,3): error C2198: 'free': too few arguments for call
+C:\Users\Bruger\source\repos\ESW1\Session_7\Exercise_6_1\linkedList.c(30,1): error C2440: 'initializing': cannot convert from 'listNode_st_t *' to 'listNode_st_t'
+  listNode.c
+C:\Users\Bruger\source\repos\ESW1\Session_7\Exercise_6_1\listNode.c(4,1): error C2143: syntax error: missing ';' before '}'
+  Generating Code...

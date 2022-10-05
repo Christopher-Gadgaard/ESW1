@@ -3,9 +3,14 @@
 #include <stdint.h>
 #include <stdlib.h>
 
+typedef struct listNode {
+	void* item;
+	listNode_st_t* next
+}listNode_st_t;
+
 typedef struct linkedList {
 	uint16_t size;
-	
+	listNode_st_t* head;
 }linkedList_st_t;
 
 linkedList_t linkedList_create(void)
@@ -13,17 +18,25 @@ linkedList_t linkedList_create(void)
 	linkedList_t _newLinkedList = calloc(sizeof(linkedList_st_t), 1);
 
 	if (NULL == _newLinkedList)
+	{
 		return NULL;
+	}
 
 	return _newLinkedList;
 }
 
 linkedList_listReturnCode_t destroy(linkedList_t self)
 {
-	if (self != NULL)
+	listNode_st_t* temp = self->head;
+
+	while (temp != NULL)
 	{
-		free(self);
+		listNode_st_t* temp2 = temp;
+		temp = temp->next;
+		free(temp->item);
 	}
+
+	free(self);
 }
 
 linkedList_listReturnCode_t push(linkedList_t list, void* item)
