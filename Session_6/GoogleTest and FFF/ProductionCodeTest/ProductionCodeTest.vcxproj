@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="..\ProductionCode\production.c" />
+    <ClCompile Include="ProductionCodeTestFFF.cpp" />
     <ClCompile Include="productionTest.cpp" />
   </ItemGroup>
   <ItemGroup>

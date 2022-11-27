@@ -67,8 +67,7 @@ void taskMyFourthTask(void* pvParameters)
 	// Remove compiler warnings.
 	(void)pvParameters;
 
-	TickType_t xLastWakeTime;
-	xLastWakeTime = xTaskGetTickCount();
+	TickType_t xLastWakeTime = xTaskGetTickCount();
 
 	for (;;)
 	{

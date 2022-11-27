@@ -2,19 +2,31 @@
 
 /*print Fahrenheit-Celsius table for fahr = 0, 20, ..., 300 */
 
+#define max_accounts 10
+
+typedef struct account* account_t;
+
+typedef struct account
+{
+	int accountNo;
+	double cl;
+	double bl;
+} account_st_t;
+
+void pAD(account_t account)
+{
+	printf("ano: %d", account->accountNo);
+}
+
 main()
 {
-	int fahr, celsius;
-	int lower, upper, step;
-	lower = 0; /* lower limit of temperature scale */
-	upper = 300; /* upper limit */
-	step = 20; /* step size */
+	account_st_t ca[max_accounts];
+	account_t pAccount = NULL;
 
-	fahr = lower;
-	while (fahr <= upper)
+	for (int i = 0; i < max_accounts; i++)
 	{
-		celsius = 5 * (fahr - 32) / 9;
-		printf("%d\t%d\n", fahr, celsius);
-		fahr = fahr + step;
+
 	}
+	pAccount = ca;
+	pAD(pAccount + 1);
 }
